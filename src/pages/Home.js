@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import headerImg from "../images/main-img.jpg";
 // import colOneImg from '../images/img-1.jpg'
 // Credential imgs
-import nic from "../images/nic.png";
+import napit from "../images/napit.png";
 import candg from "../images/candg.png";
 import chas from "../images/chas.jpg";
 import paxton from "../images/paxton.jpg";
@@ -34,7 +34,7 @@ function Home() {
         <Container fluid>
           <Row>
             <Col className="cred-img-wrapper">
-              <img src={nic} alt="NIC EIC" className="cred-img" />
+              <img src={napit} alt="Napit" className="cred-img" />
             </Col>
             <Col className="cred-img-wrapper">
               <img src={candg} alt="City and Guilds" className="cred-img" />

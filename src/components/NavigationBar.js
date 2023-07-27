@@ -12,7 +12,7 @@ function NavigationBar() {
 
 
   return (
-    <Navbar expand="lg" className="px-5 py-4 shadow-sm">
+    <Navbar expand="lg" className="px-1 py-4 shadow-sm">
       <Container fluid>
         <Navbar.Brand href="#">
           <img src={logo} alt="PP Electrical brand" className="logo"/>

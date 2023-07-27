@@ -20,7 +20,7 @@ function About() {
       </header>
       <main>
         <div className="about-container">
-          <div className="panel shadow">
+          <div className="panel">
             <h3 className="mb-5 pp-color">Team of Experts</h3>
             <p className="fs-5">
               Our success is driven by our exceptional team of skilled
@@ -32,7 +32,7 @@ function About() {
               of any complexity with confidence.
             </p>
           </div>
-          <div className="panel shadow">
+          <div className="panel">
             <h3 className="mb-5 pp-color">Client-Centric Approach</h3>
             <p className="fs-5">
               At PP Electrical, our clients are at the heart of everything we
@@ -43,7 +43,7 @@ function About() {
               align with your objectives and budget.
             </p>
           </div>
-          <div className="panel shadow">
+          <div className="panel">
             <h3 className="mb-5 pp-color">Commitment to Safety</h3>
             <p className="fs-5">
               Safety is our topmost priority. We maintain rigorous safety
@@ -53,7 +53,7 @@ function About() {
               for the people impacted by our work.
             </p>
           </div>
-          <div className="panel shadow">
+          <div className="panel">
             <h4 className="mb-5 pp-color">Sustainability and Environmental Responsibility</h4>
             <p className="fs-5">
               Our success is driven by our exceptional team of skilled
