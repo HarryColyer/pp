@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pp/static/css/main.c90fbe5b.css",
-    "main.js": "/pp/static/js/main.545ead89.js",
+    "main.css": "/pp/static/css/main.e8263649.css",
+    "main.js": "/pp/static/js/main.2c969ffe.js",
     "static/media/main-img.jpg": "/pp/static/media/main-img.caeb9d6565242124471b.jpg",
     "static/media/elect.jpg": "/pp/static/media/elect.b0128a12104c1799b5a1.jpg",
     "static/media/duct.jpg": "/pp/static/media/duct.ae56656dddd4c52d543b.jpg",
@@ -11,14 +11,15 @@
     "static/media/Renewable Electrical.jpg": "/pp/static/media/Renewable Electrical.aae4f733d858de4eb5d2.jpg",
     "static/media/trustmark.png": "/pp/static/media/trustmark.4b79353fcf7250266236.png",
     "static/media/candg.png": "/pp/static/media/candg.f19c0fe44645380e9a8f.png",
+    "static/media/logo-text.png": "/pp/static/media/logo-text.f93590269d80577b80a3.png",
     "static/media/the-current.png": "/pp/static/media/the-current.39e2a6945d17f253910f.png",
     "static/media/text.png": "/pp/static/media/text.3ee24d968f2219bc5402.png",
     "index.html": "/pp/index.html",
-    "main.c90fbe5b.css.map": "/pp/static/css/main.c90fbe5b.css.map",
-    "main.545ead89.js.map": "/pp/static/js/main.545ead89.js.map"
+    "main.e8263649.css.map": "/pp/static/css/main.e8263649.css.map",
+    "main.2c969ffe.js.map": "/pp/static/js/main.2c969ffe.js.map"
   },
   "entrypoints": [
-    "static/css/main.c90fbe5b.css",
-    "static/js/main.545ead89.js"
+    "static/css/main.e8263649.css",
+    "static/js/main.2c969ffe.js"
   ]
 }
