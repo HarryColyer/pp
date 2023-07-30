@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/pp/static/css/main.e1e8ea93.css",
-    "main.js": "/pp/static/js/main.2022f5e3.js",
+    "main.js": "/pp/static/js/main.2725f453.js",
     "static/media/main-img.jpg": "/pp/static/media/main-img.caeb9d6565242124471b.jpg",
     "static/media/elect.jpg": "/pp/static/media/elect.b0128a12104c1799b5a1.jpg",
+    "static/media/commercial-ev-charging-station.jpg": "/pp/static/media/commercial-ev-charging-station.800604c92dd876724fa7.jpg",
     "static/media/duct.jpg": "/pp/static/media/duct.ae56656dddd4c52d543b.jpg",
     "static/media/SafeContractor.webp": "/pp/static/media/SafeContractor.f2ab6d39e646ad0b5b82.webp",
     "static/media/chas.jpg": "/pp/static/media/chas.665aec7f2644163468fd.jpg",
@@ -16,10 +17,10 @@
     "static/media/text.png": "/pp/static/media/text.3ee24d968f2219bc5402.png",
     "index.html": "/pp/index.html",
     "main.e1e8ea93.css.map": "/pp/static/css/main.e1e8ea93.css.map",
-    "main.2022f5e3.js.map": "/pp/static/js/main.2022f5e3.js.map"
+    "main.2725f453.js.map": "/pp/static/js/main.2725f453.js.map"
   },
   "entrypoints": [
     "static/css/main.e1e8ea93.css",
-    "static/js/main.2022f5e3.js"
+    "static/js/main.2725f453.js"
   ]
 }
