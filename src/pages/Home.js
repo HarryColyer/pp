@@ -2,9 +2,12 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+
 // images
 import headerImg from "../images/main-img.jpg";
-// import colOneImg from '../images/img-1.jpg'
+import img from '../images/the-current.png'
+import imgText from '../images/logo-text.png'
+
 // Credential imgs
 import napit from "../images/napit.png";
 import candg from "../images/candg.png";
@@ -13,24 +16,39 @@ import paxton from "../images/paxton.jpg";
 import safeContract from "../images/SafeContractor.webp";
 import trustmark from "../images/trustmark.png";
 
-
-
 function Home() {
   return (
     <React.Fragment>
-      <header className="mb-5">
-        <Container fluid className="position-relative rm-all-pm">
+      <header className="mb-5 position-relative">
+        {/* <div className="home-header-img d-flex justify-content-center">
+          <img src={img} alt="" className="w-50"/>
+        </div> */}
+        <div className="sm-none">
           <div className="home-header">
-            <h1 className="display-1" style={{color: "#fff"}}>Welcome to PP Electrical</h1>
-            <h4 className="display-6 mt-5" style={{ color: "#fff" }}>
+            <h1
+              className="display-1 pb-4 text-nowrap text-center"
+              style={{ color: "#fff" }}
+            >
+              Welcome to PP Electrical
+            </h1>
+            <h4
+              className="display-6 pt-4 text-center"
+              style={{ color: "#fff" }}
+            >
               Your Trusted Mechanical and Electrical Solutions Provider
             </h4>
           </div>
           <div className="img-gradient"></div>
           <img src={headerImg} alt="team meeting" className="img-fluid" />
-        </Container>
+        </div>
+        <div className="mt-5 lg-none">
+          <div className="d-flex flex-column align-items-center my-3 w-100 px-5">
+            <img src={imgText} alt="PP Electrical ltd" className="w-75" />
+            <img src={img} alt="The current specialists" className="w-75"  />
+          </div>
+        </div>
       </header>
-      <section className="my-5 sm-none">
+      <section className="my-4 sm-none">
         <Container fluid>
           <Row>
             <Col className="cred-img-wrapper">
@@ -43,14 +61,14 @@ function Home() {
               <img src={chas} alt="CHAS" className="cred-img" />
             </Col>
             <Col className="cred-img-wrapper">
-              <img src={paxton} alt="Paxton" className="cred-img" />
+              <img src={safeContract} alt="Paxton" className="cred-img" />
             </Col>
             <Col className="cred-img-wrapper">
-              <img src={trustmark} alt="Trustmark" className="cred-img" />
+              <img src={paxton} alt="Trustmark" className="cred-img" />
             </Col>
             <Col className="cred-img-wrapper">
               <img
-                src={safeContract}
+                src={trustmark}
                 alt="safe contractor"
                 className="cred-img"
               />
@@ -58,11 +76,11 @@ function Home() {
           </Row>
         </Container>
       </section>
-      <main className="my-5">
-        <Container fluid="true" className="mt-5">
-          <Row className="mt-5 my-5">
-            <Col xl={6} className="px-5 mx-auto mb-5">
-              <h5 className="display-4 my-5 pp-color">Our Services</h5>
+      <main className="my-4">
+        <Container className="mt-5 mx-auto">
+          <Row className="mt-5 my-4">
+            <Col xxl={6} className="mx-auto mb-5">
+              <h5 className="display-4 my-4 pp-color">Our Services</h5>
               <p className="fs-4 mb-3">
                 As a comprehensive mechanical and electrical solutions provider,
                 we offer a wide range of services tailored to meet the unique
@@ -90,6 +108,7 @@ function Home() {
                     performance and energy efficiency.
                   </p>
                 </li>
+
                 <li>
                   <h6 className="pp-color my-2 fs-3">Energy Solutions</h6>
                   <p className="fs-5">
@@ -114,8 +133,8 @@ function Home() {
             </Col>
           </Row>
           {/* <Row>
-            <Col xl={6} className="px-5 mx-auto">
-              <h5 className="display-5 my-5 pp-color">Our Projects</h5>
+            <Col xxl={6} className="-5 mx-auto">
+              <h5 className="display-5 my-4 pp-color">Our Projects</h5>
               <p className="fs-5 mb-3">
                 PP Electrical takes immense pride in our successful projects
                 that span various industries. Our portfolio includes projects in
@@ -130,8 +149,8 @@ function Home() {
             </Col>
           </Row> */}
           <Row>
-            <Col xl={6} className="px-5 mb-5 mx-auto my-5">
-              <h5 className="display-5 my-5 pp-color">Why Choose Us?</h5>
+            <Col xxl={6} className="mb-5 mx-auto my-4">
+              <h5 className="display-5 my-4 pp-color">Why Choose Us?</h5>
               <ul className="service-list ps-3">
                 <li>
                   <h6 className="pp-color my-2 fs-3">Expert Team</h6>

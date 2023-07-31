@@ -1,37 +1,83 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { List, CaretDown } from "react-bootstrap-icons";
 
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Button from "react-bootstrap/Button";
 import logo from "../images/pp-ele-logo.png";
 import "../App";
+import img from "../images/the-current.png";
+import imgText from "../images/text.png";
 
 function NavigationBar() {
+  const [clicked, setClick] = useState(false);
+  const [isToggled, setToggle] = useState(false);
+  const [isShown, setIsShown] = useState(false);
+  const [isMouseOn, setIsMouseOn] = useState(false);
 
+  const handleNavToggle = () => {
+    setClick(!clicked);
+  };
+
+  const handleSubNavToggle = () => {
+    setToggle(!isToggled);
+  };
+
+  const handleMouseEnter = () => {
+    setIsShown(true);
+  };
+
+  const handleMouseLeave = () => {
+    setTimeout(() => {
+      setIsShown(false);
+    }, 1000);
+  };
 
   return (
-    <Navbar expand="lg" className="px-1 py-4 shadow-sm">
-      <Container fluid>
-        <Navbar.Brand href="#">
-          <img src={logo} alt="PP Electrical brand" className="logo"/>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" style={{border: "none", outline: "none"}}/>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="d-flex align-items-center ms-auto">
-            <Nav.Link className="mx-1"><Link to="/" className="custom-hover px-3 py-2">Home</Link></Nav.Link>
-            <Nav.Link className="mx-1"><Link to="/about" className="custom-hover px-3 py-2">About</Link></Nav.Link>
-            <Nav.Link className="mx-1"><Link to="/clients" className="custom-hover px-3 py-2">EV Charging</Link></Nav.Link>
-            <Nav.Link className="mx-1"><Link to="/services" className="custom-hover px-3 py-2">Services</Link></Nav.Link>
-            <Nav.Link>
-              <Button variant="danger" className="px-5 py-3">Contact Us</Button>
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav className="nav shadow-sm">
+      <div className="nav-brand">
+        <Link to="/" className="d-flex flex-row align-items-center">
+          <img src={logo} alt="" className="logo" />
+          <div className="nav-logo-2 sm-none">
+            <img src={imgText} alt="" />
+            <img src={img} alt="" />
+          </div>
+        </Link>
+      </div>
+      <div className={clicked ? "nav-links toggled" : "nav-links"}>
+        <Link onClick={() => setClick(false)} to="/" className="custom-hover">
+          Home
+        </Link>
+        <Link onClick={() => setClick(false)} to="/about" className="custom-hover">
+          About
+        </Link>
+        <Link onClick={() => setClick(false)} to="/services" className="custom-hover">
+          Services
+        </Link>
+        <Link
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          onClick={handleSubNavToggle}
+          className="custom-hover"
+        >
+          EV Charging <CaretDown />
+        </Link>
+          <div
+            onMouseEnter={() => setIsMouseOn(true)}
+            onMouseLeave={() => setIsMouseOn(false)}
+            className={`sub-links ${isToggled ? "toggled" : ""} ${
+              isMouseOn ? "hovered" : ""
+            } ${isShown ? "hovered" : ""}`}
+          >
+            <Link onClick={() => setClick(false)} to="/evcharging">Installation</Link>
+            <Link onClick={() => setClick(false)} to="/olev">OLEV Grant</Link>
+          </div>
+        <Link onClick={() => setClick(false)} to="/landlords" className="custom-hover">
+          Landlords
+        </Link>
+          <Link  to="/contact" onClick={() => setClick(false)}><button className="my-btn">Contact Us</button></Link>
+
+      </div>
+      <List onClick={handleNavToggle} className="nav-toggle" />
+    </nav>
   );
 }
-
 export default NavigationBar;

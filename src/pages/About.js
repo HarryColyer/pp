@@ -2,13 +2,13 @@ import React from "react";
 
 function About() {
   return (
-    <React.Fragment>
+    <main>
       <header className="my-5 py-5 my-auto d-flex flex-row about-header">
         <div className="shape sm-none ms-3"></div>
         <div className="px-5 header-text me-5">
           <h1 className="my-5 pp-color display-4">About Us And Our Mission.</h1>
           <p className="fs-5">
-            With 40 years of experience, we have established ourselves as a
+            With 40 years combined experience in the industry, we have established ourselves as a
             trusted name in delivering top-tier services to our clients in the
             UK and beyond. We are dedicated to providing innovative, reliable,
             and sustainable solutions that propel our clients' projects towards
@@ -67,7 +67,7 @@ function About() {
           </div>
         </div>
       </main>
-    </React.Fragment>
+    </main>
   );
 }
 
