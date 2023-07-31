@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/pp/static/css/main.e1e8ea93.css",
-    "main.js": "/pp/static/js/main.2725f453.js",
+    "main.js": "/pp/static/js/main.bc1d43c8.js",
     "static/media/main-img.jpg": "/pp/static/media/main-img.caeb9d6565242124471b.jpg",
     "static/media/elect.jpg": "/pp/static/media/elect.b0128a12104c1799b5a1.jpg",
     "static/media/commercial-ev-charging-station.jpg": "/pp/static/media/commercial-ev-charging-station.800604c92dd876724fa7.jpg",
     "static/media/duct.jpg": "/pp/static/media/duct.ae56656dddd4c52d543b.jpg",
     "static/media/SafeContractor.webp": "/pp/static/media/SafeContractor.f2ab6d39e646ad0b5b82.webp",
-    "static/media/chas.jpg": "/pp/static/media/chas.665aec7f2644163468fd.jpg",
     "static/media/ev-charging.webp": "/pp/static/media/ev-charging.d5475ba1d53b1440be8a.webp",
     "static/media/Renewable Electrical.jpg": "/pp/static/media/Renewable Electrical.aae4f733d858de4eb5d2.jpg",
     "static/media/trustmark.png": "/pp/static/media/trustmark.4b79353fcf7250266236.png",
     "static/media/candg.png": "/pp/static/media/candg.f19c0fe44645380e9a8f.png",
+    "static/media/chas.jpg": "/pp/static/media/chas.698d390ae71fa290bd27.jpg",
     "static/media/logo-text.png": "/pp/static/media/logo-text.f93590269d80577b80a3.png",
     "static/media/the-current.png": "/pp/static/media/the-current.39e2a6945d17f253910f.png",
     "static/media/text.png": "/pp/static/media/text.3ee24d968f2219bc5402.png",
     "index.html": "/pp/index.html",
     "main.e1e8ea93.css.map": "/pp/static/css/main.e1e8ea93.css.map",
-    "main.2725f453.js.map": "/pp/static/js/main.2725f453.js.map"
+    "main.bc1d43c8.js.map": "/pp/static/js/main.bc1d43c8.js.map"
   },
   "entrypoints": [
     "static/css/main.e1e8ea93.css",
-    "static/js/main.2725f453.js"
+    "static/js/main.bc1d43c8.js"
   ]
 }
